@@ -13,11 +13,7 @@ auth.set_access_token(token, token_secret)
 api = tweepy.API(auth)
 
 
-search_hashtags = ['#gbv', '#genderbasedviolence', '#domesticviolence', '#endgbv', 
-                   '#GBVNigeria', '#metoo','#guidedbyvoices','#stopgbv',' #consent', 
-                   '#domesticabuse','#arewametoo','#sexualabuse','#sexualexploitation',
-                   '#sexualharassment','#violenceagainstwomen','#rape', '#sexualassault', 
-                   '#humanrightsviolation','#SpotlightEndViolence', '#SpotlightNG']
+search_hashtags = ['']
 
 
 def get_tweets(search_hashtags):
@@ -28,7 +24,7 @@ def get_tweets(search_hashtags):
     try:
         for query in search_hashtags:
             tweets = [status for status in
-                      tweepy.Cursor(api.search, q=query, lang="en", geocode='9.0845755,8.674252499999994,550km',
+                      tweepy.Cursor(api.search, q=query, lang="en", geocode='km',
                                     since=date_since, rpp=100).items(max_tweets)]
 
             print(len(tweets))
