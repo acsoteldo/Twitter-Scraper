@@ -1,3 +1,3 @@
-## TwitterScraper
+## Twitter Scraper
 
 import tweepy
