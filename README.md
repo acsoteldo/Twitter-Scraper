@@ -1,3 +1,3 @@
 ## Webscraper
 
-* Twitter: import tweepy
+Analyze specific area of interest, and develop case study.
